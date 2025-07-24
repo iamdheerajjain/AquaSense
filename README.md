@@ -40,6 +40,8 @@ pip install scikit-learn pandas numpy matplotlib
 ### 2. 🔧 Run the Project
 python water_quality_ml.py --csv water_quality_500.csv --target is_potable --task classification
 
+---
+
 ## 📸 Output Preview
 
 ![op1](op-type1.png)
