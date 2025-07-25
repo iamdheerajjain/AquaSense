@@ -157,7 +157,6 @@ def main():
         pipe = joblib.load(args.model_path)
         new_df = pd.read_csv(args.predict_csv)
         preds = pipe.predict(new_df)
-        # If classifier and has predict_proba
         proba = pipe.predict_proba(new_df)[:, 1] if hasattr(pipe, "predict_proba") else None
 
         print("\n=== Predictions ===")
@@ -185,7 +184,6 @@ def main():
 
     base_model = get_model(args.task, args.model_type)
 
-    # Build full pipeline
     pipe = Pipeline(steps=[
         ("pre", preprocessor),
         ("model", base_model)
