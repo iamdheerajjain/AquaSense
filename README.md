@@ -37,7 +37,7 @@ This project uses machine learning to classify whether a given water sample is *
 ### 1. 🔧 Install Requirements
 pip install scikit-learn pandas numpy matplotlib
 
-### 2. 🔧 Run the Project
+### 2. 🔧 Run AquaSense
 python water_quality_ml.py --csv water_quality_500.csv --target is_potable --task classification
 
 ---
